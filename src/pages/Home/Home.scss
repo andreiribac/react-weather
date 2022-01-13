@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+
+.current-day {
+	display: block;
+	width: 100%;
+	&__row {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		& > * + * {
+			margin-left: 50px;
+		}
+	}
+	// &__main {
+	// }
+	&__current-temperature {
+		font-weight: 500;
+		font-size: 96px;
+		color: $color-decor;
+	}
+	&__current-day {
+		font-size: 40px;
+	}
+	&__current-img {
+		display: block;
+		width: 120px;
+		height: 120px;
+	}
+	&__location {
+		margin-top: 20px;
+		font-size: 25px;
+		font-weight: 400;
+		color: $color-gray;
+	}
+	&__info {
+		position: relative;
+		padding: 20px 10px;
+	}
+	&__info-bg-img {
+		position: absolute;
+		top: -20px;
+		right: -20px;
+		z-index: 1;
+	}
+	&__info-box {
+		position: relative;
+		
+		z-index: 2;
+	}
+}
