@@ -2,6 +2,7 @@ import React from 'react'
 import { ItemShape } from '..';
 
 import cloudBg from '../../assets/img/cloud.png'
+import ThisDayItem from './ThisDayItem';
 
 function ThisDayInfo() {
 	const items = [
@@ -27,13 +28,15 @@ function ThisDayInfo() {
 		},
 	];
 	return (
-		<ItemShape>
+		<ItemShape wmax>
 			<div className="current-day__info">
 				<img src={cloudBg} alt="" className="current-day__info-bg-img" />
 				<div className="current-day__info-box">
-					<div className="current-day__info-item">
-
-					</div>
+					{items.map((item) => {
+						return (
+							<ThisDayItem key={item.icon_id} item={item} />
+						)
+					})}
 				</div>
 			</div>
 		</ItemShape>

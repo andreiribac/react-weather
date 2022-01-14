@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Home.scss';
-import { ThisDay, ThisDayInfo } from '../../components';
+import { Days, ThisDay, ThisDayInfo } from '../../components';
 
 function Home() {
 	return (
@@ -11,6 +11,7 @@ function Home() {
 					<ThisDay />
 					<ThisDayInfo />
 				</div>
+				<Days />
 			</div>
 
 		</>
