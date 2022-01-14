@@ -12,8 +12,27 @@
 			margin-left: 50px;
 		}
 	}
-	// &__main {
-	// }
+	&__main {
+		&--small {
+			align-self: center;
+			.current-day {
+				&__current-temperature {
+					font-size: 60px;
+				}
+				&__current-day {
+					font-size: 20px;
+				}
+				&__current-img {
+					margin-top: 24px;
+					width: 48px;
+					height: 48px;
+				}
+				&__location {
+					font-size: 14px;
+				}
+			}
+		}
+	}
 	&__current-temperature {
 		font-weight: 500;
 		font-size: 96px;
@@ -32,6 +51,9 @@
 		font-size: 25px;
 		font-weight: 400;
 		color: $color-gray;
+	}
+	&__time, &__city {
+		white-space: nowrap;
 	}
 	&__info {
 		position: relative;
