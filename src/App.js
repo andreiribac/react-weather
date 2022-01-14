@@ -34,13 +34,13 @@ function App() {
       <PopUp>
         <div className="current-day">
           <div className="df">
-            <div class="current-day__main current-day__main--small">
-              <div class="current-day__current-temperature">20°</div>
-              <div class="current-day__current-day">Сегодня</div>
+            <div className="current-day__main current-day__main--small">
+              <div className="current-day__current-temperature">20°</div>
+              <div className="current-day__current-day">Сегодня</div>
               <GlobalSvgSelector id='sun' className="current-day__current-img" />
-              <div class="current-day__location">
-                <div class="current-day__time">Время: <span>21:54</span></div>
-                <div class="current-day__city">Город: <span>Санкт-Петербург</span></div>
+              <div className="current-day__location">
+                <div className="current-day__time">Время: <span>21:54</span></div>
+                <div className="current-day__city">Город: <span>Санкт-Петербург</span></div>
               </div>
             </div>
             <div className="current-day__info">
