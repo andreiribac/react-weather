@@ -1,5 +1,5 @@
 import React from 'react'
-import { ItemShape, Card } from '..';
+import { ItemShape, Card, Tabs } from '..';
 
 function Days() {
 	const days = [
@@ -62,15 +62,17 @@ function Days() {
 	];
 	return (
 		<>
+			<Tabs />
 			<ItemShape topBorder>
-				{
-					days.map(day => {
-						return (
-							<Card key={day.day_info} day={day} />
-						);
-					})
-				}
-
+				<div className="days-view">
+					{
+						days.map(day => {
+							return (
+								<Card key={day.day_info} day={day} />
+							);
+						})
+					}
+				</div>
 			</ItemShape>
 		</>
 	)
