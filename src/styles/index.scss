@@ -32,7 +32,8 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.2;
-	color: $light-color;
+	color: var(#{--font-color-default});
+	background-color: var(#{--body-bg-default});
 	overflow-x: hidden;
 }
 
@@ -44,11 +45,15 @@ body {
 	width: 100%;
 }
 
+.main {
+	padding-bottom: 20px;
+}
+
 .item-shape {
 	position: relative;
 	padding: 20px;
 	box-shadow: $box-shadow;
-	background-color: $light-background;
+	background-color: var(#{--components-bg-default});
 	border-radius: $border-radius;
 	&--top-border {
 		border-top-left-radius: 0;
@@ -74,7 +79,7 @@ body {
 		height: 48px;
 	}
 	h3, .h3 {
-		color: $light-color;
+		color: var(#{--font-color-default});
 	}
 	span {
 		display: inline-block;
@@ -114,8 +119,8 @@ body {
 	padding: 0 20px;
 	width: auto;
 	height: 35px;
-	color: $light-color;
-	background-color: $light-background;
+	color: var(#{--font-color-default});
+	background-color: var(#{--btn-bg-default});
 	border-radius: 5px;
 	box-shadow: $box-shadow;
 	cursor: pointer;

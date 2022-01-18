@@ -43,9 +43,11 @@
 	margin-right: 20px;
 	width: 38px;
 	height: 38px;
+	cursor: pointer;
 	&__img {
 		display: block;
 		width: 35px;
 		height: 35px;
+		pointer-events: none;
 	}
 }

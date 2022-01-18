@@ -1,6 +1,38 @@
 $color-decor: #4793ff;
 $color-gray: #939CB0;
-$light-color: #000;
+
 $light-background: #fff;
 $box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
 $border-radius: 20px;
+
+$light-color: #000;
+$dark-color: #fff;
+$body-bg-dark: #0d1117;
+$body-bg-light: #fff;
+
+$components-bg-dark: #4f4f4f;
+$components-bg-light: #fff;
+
+$btn-bg-dark: #4f4f4f;
+$btn-bg-light: #fff;
+
+:root {
+	// body
+	--font-color-light: #{$light-color};
+	--font-color-dark: #{$dark-color};
+	--font-color-default: #{$light-color};
+
+	--body-bg-dark: #{$body-bg-dark};
+	--body-bg-light: #{$body-bg-light};
+	--body-bg-default: var(#{--body-bg-light});
+
+	// components bg
+	--components-bg-dark: #{$components-bg-dark};
+	--components-bg-light: #{$components-bg-light};
+	--components-bg-default: var(#{--components-bg-light});
+
+	// btn bg
+	--btn-bg-dark: #{$btn-bg-dark};
+	--btn-bg-light: #{$btn-bg-light};
+	--btn-bg-default: var(#{--btn-bg-light});
+}

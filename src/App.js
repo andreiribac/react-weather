@@ -27,11 +27,11 @@ const items = [
     value: '3 м/с юго-запад - легкий ветер',
   },
 ];
-// TODO lesson 2 https://www.youtube.com/watch?v=W4h_fOVo8xI
+// TODO lesson 2 https://www.youtube.com/watch?v=W4h_fOVo8xI - ошибки
 function App() {
   return (
     <>
-      <PopUp>
+      {/* <PopUp>
         <div className="current-day">
           <div className="df">
             <div className="current-day__main current-day__main--small">
@@ -56,7 +56,7 @@ function App() {
 
         </div>
 
-      </ PopUp>
+      </ PopUp> */}
       <div className='wrapper'>
         <Header />
         <main className="main">
