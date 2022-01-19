@@ -1,4 +1,3 @@
-
 export function changeCssRootVariables(theme) {
 	const root = document.querySelector(':root');
 

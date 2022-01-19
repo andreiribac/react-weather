@@ -55,6 +55,7 @@ body {
 	box-shadow: $box-shadow;
 	background-color: var(#{--components-bg-default});
 	border-radius: $border-radius;
+	overflow: hidden;
 	&--top-border {
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
